@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/xenial64"
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+  config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.provision "shell", path: "script.sh"
 
   config.vm.provision :reload
