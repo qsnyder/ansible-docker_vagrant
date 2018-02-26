@@ -1,6 +1,7 @@
 *.retry
 output/*
 .vagrant/*
+synched/*
 
 # Compiled source #
 ###################
