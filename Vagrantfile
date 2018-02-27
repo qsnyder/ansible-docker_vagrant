@@ -1,10 +1,16 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+#
+# Ubuntu/Xenial Vagrant box with provisioning to install required elements for Ansible, AWX
+# Used to decrease the time for uptake of a rudimentary network automation system for non-NetDevOps engineers
+#
+# Author: Quinn Snyder, Systems Engineer | Enterprise Southwest .:|:.:|:. Cisco Systems .:|:.:|:.
+# Date: 2018-02-26
+# Version: 0.1a
+#
 
-# All Vagrant configuration is done below. The "2" in Vagrant.configure
-# configures the configuration version (we support older styles for
-# backwards compatibility). Please don't change it unless you know what
-# you're doing.
+raise "vagrant-reload plugin must be installed.  Please install using 'vagrant plugin install vagrant-reload'" unless Vagrant.has_plugin? "vagrant-reload"
+
 Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
