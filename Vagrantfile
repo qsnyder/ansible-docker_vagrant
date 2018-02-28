@@ -30,4 +30,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "post-reboot.sh"
 
+  config.vm.provision "shell", path: "message.sh"
+
 end
