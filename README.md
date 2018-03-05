@@ -17,4 +17,8 @@ The `synched` folder within the directory structure is synched directly with the
 3. Install `vagrant-reload` plugin
 4. Run `vagrant up`
 
+Username and password for AWX are left at defaults:
+Username: `admin`
+Password: `password`
+
 ### Errata or Bugs
