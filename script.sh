@@ -21,5 +21,5 @@ sudo usermod -a -G docker vagrant
 sudo systemctl status docker
 
 sudo apt-get install -y python-pip
-pip install --upgrade pip
-pip install docker
+sudo pip install --upgrade pip
+sudo pip install docker
